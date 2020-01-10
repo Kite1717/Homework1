@@ -1,4 +1,4 @@
-package Soldiers;
+package soldiers;
 
 public class Yuzbasi extends Soldier {
 

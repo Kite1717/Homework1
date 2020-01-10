@@ -1,4 +1,4 @@
-package Helper;
+package helper;
 
 public class Coordinate {
     private int x ,y;

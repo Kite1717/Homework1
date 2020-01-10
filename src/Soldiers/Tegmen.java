@@ -1,4 +1,4 @@
-package Soldiers;
+package soldiers;
 
 public class Tegmen extends Soldier {
     public Tegmen(int x, int y, String team) {

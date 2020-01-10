@@ -1,6 +1,6 @@
-package Soldiers;
+package soldiers;
 
-import  Helper.Coordinate;
+import  helper.Coordinate;
 
 import java.util.ArrayList;
 
