@@ -22,11 +22,17 @@ public class Team {
         createTeam();
     }
 
+    /**
+     * Soldiers are created up to the military limit
+     */
     private void createTeam()
     {
         Random random = new Random();
         int decision;
+        //max one Yuzbasi
         int limitOfYuzbasi = 1;
+
+        //min 1 max 2 Tegmen
         int limitOfTegmen = 1;
 
         //default add one tegmen
@@ -53,4 +59,13 @@ public class Team {
 
     }
 
+    //region getters
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Soldier> getSoldiers() {
+        return soldiers;
+    }
+    //endregion
 }
