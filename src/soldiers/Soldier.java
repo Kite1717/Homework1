@@ -12,7 +12,7 @@ public class Soldier{
     private String rank;
     private ArrayList<Integer> damages;
     private Coordinate coord;
-
+    private  String name;
 
 //region constructor
     /**
@@ -22,13 +22,14 @@ public class Soldier{
      * @param team selected team
      * @param rank level info
      */
-    public Soldier(int x, int y , String team, String rank) {
+    public Soldier(int x, int y , String team, String rank,String name) {
 
         this.coord = new Coordinate(x,y);
         this.heal = 100;
         this.isAlive = true;
         this.team = team;
         this.rank = rank;
+        this.name =  name;
         damages = new ArrayList<>();
     }
     //endregion
@@ -69,6 +70,11 @@ public class Soldier{
     public Coordinate getCoord() {
         return coord;
     }
+
+    public String getName() {
+        return name;
+    }
+
     //endregion
 
 
