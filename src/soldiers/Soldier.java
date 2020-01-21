@@ -4,14 +4,14 @@ import  helper.Coordinate;
 
 import java.util.ArrayList;
 
-public class Soldier  extends  Coordinate{
+public class Soldier{
 
     private int heal;
     private boolean isAlive;
     private String team;
     private String rank;
     private ArrayList<Integer> damages;
-
+    private Coordinate coord;
 
 
 //region constructor
@@ -23,7 +23,8 @@ public class Soldier  extends  Coordinate{
      * @param rank level info
      */
     public Soldier(int x, int y , String team, String rank) {
-        super(x, y);
+
+        this.coord = new Coordinate(x,y);
         this.heal = 100;
         this.isAlive = true;
         this.team = team;
@@ -53,19 +54,9 @@ public class Soldier  extends  Coordinate{
     public String getTeam() {
         return team;
     }
-
-    public void setTeam(String team) {
-        this.team = team;
-    }
-
     public String getRank() {
         return rank;
     }
-
-    public void setRank(String rank) {
-        this.rank = rank;
-    }
-
 
     public ArrayList<Integer> getDamages() {
         return damages;
@@ -73,6 +64,10 @@ public class Soldier  extends  Coordinate{
 
     public void setDamages(ArrayList<Integer> damages) {
         this.damages = damages;
+    }
+
+    public Coordinate getCoord() {
+        return coord;
     }
     //endregion
 
