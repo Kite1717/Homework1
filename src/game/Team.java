@@ -36,23 +36,24 @@ public class Team {
         int limitOfTegmen = 1;
 
         //default add one tegmen
-        soldiers.add(new Tegmen(0,0,name));
+        soldiers.add(new Tegmen(0,0,name,"Tegmen 1"));
 
-        for (int i = 1; i <= soldierLimit-1 ; i++)
+        for (int i = 1 , countOfEr = 1; i <= soldierLimit-1 ; i++)
         {
             decision = random.nextInt() % 3;
             if(decision ==0){ // er
 
-                soldiers.add(new Er(0,0,name));
+                soldiers.add(new Er(0,0,name,"Er " + countOfEr));
+                countOfEr++;
             }
             else  if( decision == 1 && limitOfTegmen  > 0){ // tegmen
 
-                soldiers.add(new Tegmen(0,0,name));
+                soldiers.add(new Tegmen(0,0,name,"Tegmen " + limitOfTegmen +1));
                 limitOfTegmen--;
             }
             else  if(decision == 2 && limitOfYuzbasi > 0){ // yuzbasi
 
-                soldiers.add(new Yuzbasi(0,0,name));
+                soldiers.add(new Yuzbasi(0,0,name  , "Yuzbasi 1"));
                 limitOfYuzbasi--;
             }
         }
