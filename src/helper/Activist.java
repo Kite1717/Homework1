@@ -4,7 +4,7 @@ import soldiers.*;
 
 import java.util.Random;
 
-public class Selective {
+public class Activist {
 
 
     /**
@@ -68,7 +68,5 @@ public class Selective {
             return  -1;
         }
     }
-
-
 
 }
