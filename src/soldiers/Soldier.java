@@ -2,6 +2,7 @@ package soldiers;
 
 import  helper.Coordinate;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Soldier{
@@ -71,6 +72,10 @@ public class Soldier{
         return coord;
     }
 
+    public void setCoord(Coordinate coord) {
+        this.coord = coord;
+    }
+
     public String getName() {
         return name;
     }
@@ -85,7 +90,7 @@ public class Soldier{
 
     }
 
-    public void  move()
+    public Coordinate  move()
     {
         throw  new UnsupportedOperationException();
     }
@@ -94,4 +99,10 @@ public class Soldier{
         throw  new UnsupportedOperationException();
     }
    //endregion
+
+
+    @Override
+    public String toString() {
+        return "Name : " + name + " Team : " + team + "Heal : " + heal + "  ";
+    }
 }
